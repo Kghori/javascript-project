@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    
+    
+  <title>Document</title>
+ 
+ 
+<body>
+  <h1>click event 
+  </h1>
+
+  <button id="bt1">submit</button>
+  <p>hello kartik</p>
+
+
+
+  <h1>hover event</h1>
+  <button onmouseover="console.log('hello');" id="hover">hover event</button>
+
+<style>
+  div{
+    height: 10%;
+    width: 10%;
+    background-color: red;
+    color: black;
+    margin: 10%;
+  }
+</style>
+  <div>
+    <p  id = "data" class="data">hell</p>
+  </div>
+  <script src="o.js"></script> 
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+    
+  const URL="https://cat-fact.herokuapp.com/facts";
+  const fetchdata=document.querySelector("#data");
+  const fetfacts = async () =>{
+      console.log("gettting data .......")
+      let fet= await  fetch(URL);
+      console.log(fet);
+      let data= await fet.json();
+    //  fetchdata.innerHTML=[0].text;
+    let dat=data[0].text;
+    document.write(dat);
+  }
+
+    </script>
+<body>
+  
+  <p id="data">ho</p>
+ 
+</body>
+</html>

@@ -1,0 +1,9 @@
+.dark{
+    background-color: black;
+    color:wheat;
+}
+.light{
+    background-color:white;
+    color:black;
+}
+.backimg{background-image: url('pexels-pixabay-36717.jpg');}
